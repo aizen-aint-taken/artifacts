@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hiraya – Museum of the Philippines and Japan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Albert+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="logo" href="#top">Hiraya</a>
+    <nav><a href="#collection">Collection</a><a href="#features">Features</a><a href="#about">About</a><a href="#faq">FAQ</a><a class="keep" href="#get">Get the app</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div>
+        <h1>Two island nations, one museum in your pocket.</h1>
+        <p>Hold a 2,800-year-old burial jar from Palawan in one hand and a Jōmon flame pot in the other. Hiraya brings the treasures of the Philippines and Japan together, with stories you can listen to anywhere.</p>
+        <div class="cta"><a class="btn" href="#get">Download free</a><a class="btn alt" href="#collection">Browse artifacts</a></div>
+      </div>
+      <svg class="suns" viewBox="0 0 400 300" role="img" aria-label="The eight-rayed sun of the Philippines beside the red sun of Japan">
+        <g class="rays" stroke="#e2a21f" stroke-width="10" stroke-linecap="round">
+          <line x1="285" y1="150" x2="285" y2="40"/><line x1="285" y1="150" x2="285" y2="260"/>
+          <line x1="285" y1="150" x2="175" y2="150"/><line x1="285" y1="150" x2="395" y2="150"/>
+          <line x1="285" y1="150" x2="207" y2="72"/><line x1="285" y1="150" x2="363" y2="228"/>
+          <line x1="285" y1="150" x2="363" y2="72"/><line x1="285" y1="150" x2="207" y2="228"/>
+        </g>
+        <circle cx="285" cy="150" r="52" fill="#e2a21f"/>
+        <circle class="jp" cx="130" cy="150" r="100" fill="#b3202a"/>
+        <circle cx="130" cy="150" r="100" fill="none" stroke="var(--bg)" stroke-width="8" opacity=".35"/>
+      </svg>
+    </section>
+
+    <section class="feat" id="features">
+      <div><h3>Walk the galleries anywhere</h3><p>Over 600 artifacts photographed in high detail. Turn them around with a finger and zoom in on the carving.</p></div>
+      <div><h3>Hear the stories</h3><p>Short audio guides in English, Filipino and Japanese, told by curators and community elders.</p></div>
+      <div><h3>Compare across the sea</h3><p>Place a Philippine piece beside a Japanese one and see how trade, craft and belief connect them.</p></div>
+    </section>
+  </main>
+</div>
+
+<section class="explore" id="collection">
+  <div class="wrap">
+    <h2>A look inside the collection</h2>
+    <p class="sub">Choose a country, then tap an artifact to read its story.</p>
+    <div class="tabs" role="group" aria-label="Filter by country">
+      <button class="tab" data-f="all" aria-pressed="true">All</button>
+      <button class="tab" data-f="ph" aria-pressed="false">Philippines</button>
+      <button class="tab" data-f="jp" aria-pressed="false">Japan</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<dialog id="dlg" aria-labelledby="dt">
+  <div id="dbody"></div>
+  <button class="btn close" id="close">Close</button>
+</dialog>
+
+<div class="wrap">
+  <section class="about" id="about">
+    <h2>About the museum</h2>
+    <p class="sub">The Philippines and Japan have traded, travelled and traded stories for more than a thousand years. Hiraya gathers their artifacts in one place so you can see the links for yourself.</p>
+    <div class="steps">
+      <div><h3>1. Choose a gallery</h3><p>Start with the Philippines, Japan, or a theme such as burial, writing or craft.</p></div>
+      <div><h3>2. Look closely</h3><p>Rotate each artifact, zoom in on the details and read the curator's notes.</p></div>
+      <div><h3>3. Listen and compare</h3><p>Play the audio story, then set two artifacts side by side.</p></div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <h2>Questions</h2>
+    <details><summary>Is the app free?</summary><p>Yes. The core galleries are free to explore.</p></details>
+    <details><summary>Which languages are supported?</summary><p>English, Filipino and Japanese.</p></details>
+    <details><summary>Can I use it offline?</summary><p>You can download a gallery before a trip and view it without a connection.</p></details>
+    <details><summary>Where do the artifacts come from?</summary><p>They come from partner museums and collections in both countries, each credited on its artifact page.</p></details>
+  </section>
+
+  <section class="get" id="get">
+    <h2>Open the doors early.</h2>
+    <p class="sub">Leave your email and we will send the download link the day Hiraya launches.</p>
+    <form class="signup" id="form" novalidate>
+      <input type="email" id="email" placeholder="you@example.com" aria-label="Email address" autocomplete="email">
+      <button class="btn" type="submit">Notify me</button>
+    </form>
+    <div id="msg" role="status" aria-live="polite"></div>
+  </section>
+  <footer>© 2026 Hiraya. Made for curious visitors of every age.</footer>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
