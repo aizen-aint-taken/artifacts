@@ -80,3 +80,6 @@ details{border-bottom:1px solid var(--line);padding:1rem 0}
 summary{cursor:pointer;font:700 1.15rem var(--serif)}
 details p{margin:.6rem 0 0;color:var(--muted)}
 @media (max-width:760px){.steps{grid-template-columns:1fr}}
+/* separate flags */
+.suns{max-width:420px;justify-self:center}
+.suns .flag{filter:drop-shadow(0 6px 10px rgba(0,0,0,.18))}
